@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Eid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <div id="formHeading">Form -Node JS</div>
+   <div id="mainContainerForForm">
+    <form action="http://localhost:8000">
+
+        <input type="text" placeholder="Enter your email " id="nameField" name="nameField">
+        <input type="text" placeholder="Enter your password " id="passwordField" name="passwordField">
+        <button type="submit" id="submitButton">Submit</button>
+        
+        
+    </form>
+    <button id="loginButton">Login</button>
+   </div>
+
+   <script>
+    let loginButton = document.getElementById("loginButton");
+    loginButton.addEventListener("click", async () => {
+        console.log("Clicked hoa ha");
+
+        let nameFieldData = document.getElementById("nameField").value;
+        let passwordFieldData = document.getElementById("passwordField").value;
+
+        console.log(nameFieldData);
+
+        let jsonData = {
+            "nameField": nameFieldData,
+            "passwordField": passwordFieldData
+        };
+
+        try {
+            const response = await fetch("http://localhost:8000/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(jsonData)
+            });
+
+            const responseData = await response.json();
+            console.log(responseData);
+        } catch (error) {
+            console.error("Error:", error);
+        }
+    });
+</script>
+
+
+
+</body>
+</html>

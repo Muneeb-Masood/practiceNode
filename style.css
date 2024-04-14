@@ -1,0 +1,58 @@
+body{
+    background-color: pink;
+}
+
+#formHeading{
+    background-color: aqua;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+
+}
+
+
+#mainContainerForForm{
+
+    background-color: red;
+    text-align: center;
+}
+
+form{
+
+    background-color: orange;
+    text-align: center;
+
+}
+
+
+input{
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    height: 20px;
+}
+
+
+#submitButton , #loginButton{
+
+    background-color: palevioletred;
+    border: none;
+    color: white;
+    font-size: 30px;
+    width: 20%;
+    margin-bottom: 10px;
+
+}
+
+#homeScreenDiv{
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+font-size: 30px;
+color: black;
+
+
+}

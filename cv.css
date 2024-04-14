@@ -1,0 +1,107 @@
+#leftHandDiv{
+
+    height: 100%;
+    background-color: #6B9999;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+p{
+    overflow: hidden;
+}
+
+#topDiv{
+    padding-left: -40px;
+    width: 100vw;
+    height: 20vh;
+    /* background-color: palevioletred; */
+    /* position: fixed; */
+    /* top: 0; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 20px;
+    flex-direction: column;
+
+}
+
+#std{
+position: relative;
+    top: 20px;
+}
+
+#mainDiv{
+
+    /* position: absolute;
+    text-align: center; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+#mainBoxForOtherItems{
+    background-color: #D5CDB6;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+
+#imageContainer img{
+    
+}
+
+img{
+    margin-left: 20px;
+    border-radius: 50%;
+    /* position: absolute; */
+    width: 10vw;
+    
+    /* margin-top: 150px;     */
+}
+
+
+#otherItems{
+
+    /* margin-top: 300px; */
+    padding-left: 40px;
+    background-color: white;
+    
+}
+
+
+#profile{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#contact{
+    padding-right: 20px;
+    padding-left: 20px;
+
+    
+}
+
+h5{
+    display: inline;
+}
+
+#inline{
+
+    display: inline;
+
+}
